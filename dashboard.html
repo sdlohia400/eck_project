@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./mycss.css">
+
+</head>
+
+<body>
+
+    <div class="container-fluid login_page">
+
+        <div class="row">
+
+            <div class="col-sm-2 pt-1">
+                <img src="./img/title.png" class="full_img pt-2">
+            </div>
+
+            <div class="col-sm-10 heading ">
+                <div class="heading_content">
+                    <i class="fa fa-search search_color" aria-hidden="true"></i>
+                    <input type="text" class="input_underline" placeholder="Search"></input>
+
+                    <div class="dropdown drop_down drop">
+                        <button class="btn drop dropdown_font dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Akshay Kumar
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else </a>
+                        </div>
+                    </div>
+
+                    <img src="./img/pics/attractive-man-model.jpg" class="profile_pic">
+                    <img src="./img/assets/Notification.svg" class="icon_notification">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2 nav_height">
+                <ul class="nav nav-tabs nav_tab ">
+                    <li class="nav-item">
+                        <a class="nav-link nav_link nav_a_active" id="dashboard" onclick="dashcolor()"
+                            href="#dashboard-left" data-toggle="tab"><img src="./img/assets/Dashboard.svg"
+                                class="icon_img">
+                            <p class="icon_p nav_p_active" id="dash_p"> Dashboard  </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav_link " id="invitation" onclick="invitationcolor()"
+                            href="#invitation-left" data-toggle="tab"> <img src="./img/assets/Invitation.svg"
+                                class="icon_img">
+                            <p class="icon_p " id="invitation_p"> Invitation </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav_link" id="user" onclick="usercolor()" href="#user-left"
+                            data-toggle="tab"><img src="./img/assets/User.svg" class="icon_img">
+                            <p class="icon_p" id="user_p"> User &nbsp;&nbsp;</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav_link" id="events" onclick="eventscolor()" href="#events-left"
+                            data-toggle="tab"><img src="./img/assets/Events.svg" class="icon_img">
+                            <p class="icon_p" id="events_p"> Events </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav_link" id="profile" onclick="profilecolor()" href="#profile-left"
+                            data-toggle="tab"> <img src="./img/assets/Profile.svg" class="icon_img">
+                            <p class="icon_p" id="profile_p"> Profile </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav_link" id="signout" onclick="signoutcolor()" href="#signout-left"
+                            data-toggle="tab"><img src="./img/assets/Sign Out.svg" class="icon_img">
+                            <p class="icon_p" id="signout_p"> Sign Out </p>
+                        </a>
+                    </li>
+                </ul>
+
+                <script>
+                    function dashcolor() {
+                        document.getElementById("dashboard").style.backgroundColor = "#F3F7FA";
+                        document.getElementById("invitation").style.backgroundColor = "white";
+                        document.getElementById("user").style.backgroundColor = "white";
+                        document.getElementById("events").style.backgroundColor = "white";
+                        document.getElementById("profile").style.backgroundColor = "white";
+                        document.getElementById("signout").style.backgroundColor = "white";
+
+                        document.getElementById("dash_p").style.color="#31ACE5";
+                        document.getElementById("invitation_p").style.color="#959595";
+                        document.getElementById("user_p").style.color="#959595";
+                        document.getElementById("events_p").style.color="#959595";
+                        document.getElementById("profile_p").style.color="#959595";
+                        document.getElementById("signout_p").style.color="#959595";
+
+
+                    }
+                    function invitationcolor() {
+                        document.getElementById("dashboard").style.backgroundColor = "white";
+                        document.getElementById("invitation").style.backgroundColor = "#F3F7FA";
+                        document.getElementById("user").style.backgroundColor = "white";
+                        document.getElementById("events").style.backgroundColor = "white";
+                        document.getElementById("profile").style.backgroundColor = "white";
+                        document.getElementById("signout").style.backgroundColor = "white";
+
+                        document.getElementById("dash_p").style.color="#959595";
+                        document.getElementById("invitation_p").style.color="#31ACE5";
+                        document.getElementById("user_p").style.color="#959595";
+                        document.getElementById("events_p").style.color="#959595";
+                        document.getElementById("profile_p").style.color="#959595";
+                        document.getElementById("signout_p").style.color="#959595";
+
+                    }
+                    function usercolor() {
+                        document.getElementById("dashboard").style.backgroundColor = "white";
+                        document.getElementById("invitation").style.backgroundColor = "white";
+                        document.getElementById("user").style.backgroundColor = "#F3F7FA";
+                        document.getElementById("events").style.backgroundColor = "white";
+                        document.getElementById("profile").style.backgroundColor = "white";
+                        document.getElementById("signout").style.backgroundColor = "white";
+
+                        document.getElementById("dash_p").style.color="#959595";
+                        document.getElementById("invitation_p").style.color="#959595";
+                        document.getElementById("user_p").style.color="#31ACE5";
+                        document.getElementById("events_p").style.color="#959595";
+                        document.getElementById("profile_p").style.color="#959595";
+                        document.getElementById("signout_p").style.color="#959595";
+                    }
+                    function eventscolor() {
+                        document.getElementById("dashboard").style.backgroundColor = "white";
+                        document.getElementById("invitation").style.backgroundColor = "white";
+                        document.getElementById("user").style.backgroundColor = "white";
+                        document.getElementById("events").style.backgroundColor = "#F3F7FA";
+                        document.getElementById("profile").style.backgroundColor = "white";
+                        document.getElementById("signout").style.backgroundColor = "white";
+
+                        document.getElementById("dash_p").style.color="#959595";
+                        document.getElementById("invitation_p").style.color="#959595";
+                        document.getElementById("user_p").style.color="#959595";
+                        document.getElementById("events_p").style.color="#31ACE5";
+                        document.getElementById("profile_p").style.color="#959595";
+                        document.getElementById("signout_p").style.color="#959595";
+                    }
+                    function profilecolor() {
+                        document.getElementById("dashboard").style.backgroundColor = "white";
+                        document.getElementById("invitation").style.backgroundColor = "white";
+                        document.getElementById("user").style.backgroundColor = "white";
+                        document.getElementById("events").style.backgroundColor = "white";
+                        document.getElementById("profile").style.backgroundColor = "#F3F7FA";
+                        document.getElementById("signout").style.backgroundColor = "white";
+
+                        document.getElementById("dash_p").style.color="#959595";
+                        document.getElementById("invitation_p").style.color="#959595";
+                        document.getElementById("user_p").style.color="#959595";
+                        document.getElementById("events_p").style.color="#959595";
+                        document.getElementById("profile_p").style.color="#31ACE5";
+                        document.getElementById("signout_p").style.color="#959595";
+                    }
+                    function signoutcolor() {
+                        document.getElementById("dashboard").style.backgroundColor = "white";
+                        document.getElementById("invitation").style.backgroundColor = "white";
+                        document.getElementById("user").style.backgroundColor = "white";
+                        document.getElementById("events").style.backgroundColor = "white";
+                        document.getElementById("profile").style.backgroundColor = "white";
+                        document.getElementById("signout").style.backgroundColor = "#F3F7FA";
+
+                        document.getElementById("dash_p").style.color="#959595";
+                        document.getElementById("invitation_p").style.color="#959595";
+                        document.getElementById("user_p").style.color="#959595";
+                        document.getElementById("events_p").style.color="#959595";
+                        document.getElementById("profile_p").style.color="#959595";
+                        document.getElementById("signout_p").style.color="#31ACE5";
+                    }
+                </script>
+
+
+                <img src="./img/Img2.png" class="full_img nav_img">
+
+            </div>
+
+            <div class="col-md-10 back_color">
+
+                <br>
+
+                <div class="tab-content">
+                    <article class="tab-pane container active" id="dashboard-left">
+                        <h3 class="tab_page_heading"> Dashboard </h3>
+                        <section>
+
+                            <div class="row">
+                                <div class="col-sm-4 div_style">
+                                    <h3 class="div_content_one"> 102 </h3>
+                                    <img src="./img/Img1.png" class="div_content_second">
+                                    <p class="div_content_third">Alumini</p>
+                                </div>
+
+                                <div class="col-sm-4 div_style">
+                                    <h3 class="div_content_one"> 98 </h3>
+                                    <img src="./img/Img4.png" class="div_content_second_img_two">
+                                    <p class="div_content_third">Invitation</p>
+                                </div>
+
+                                <div class="col-sm-4 div_style">
+                                    <h3 class="div_content_one"> 85 </h3>
+                                    <img src="./img/Img3.png" class="div_content_second">
+                                    <p class="div_content_third">Events</p>
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <div class="row">
+                                <div class="col-sm-6 table_pad">
+                                    <h3 class="tab_page_heading">Recent Registerd </h3>
+                                    <table class="table table_font  roundedCorners">
+                                        <thead>
+                                            <tr>
+                                                <th class="t1" scope="col">Sr. No.</th>
+                                                <th class="t1" scope="col">Code</th>
+                                                <th class="t1" scope="col">Assigner</th>
+                                                <th class="t1" scope="col">Recipient</th>
+                                                <th class="t1" scope="col">Date</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="t1">12345</td>
+                                                <td class="t1">ECKH2HE10</td>
+                                                <td class="t1">Sapna Harsh</td>
+                                                <td class="t1">Anuj Tiwari</td>
+                                                <td class="t1">May 21, 2021</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="t1">12346</td>
+                                                <td class="t1">ECDF2HE10</td>
+                                                <td class="t1">Sapna Harsh</td>
+                                                <td class="t1">Anuj Tiwari</td>
+                                                <td class="t1">May 21, 2021</td>
+                                            </tr>
+                                            <tr >
+                                                <td class="t1">12347</td>
+                                                <td class="t1">ETRH2HE10</td>
+                                                <td class="t1">Sapna Harsh</td>
+                                                <td class="t1">Anuj Tiwari</td>
+                                                <td class="t1">May 21, 2021</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="t1">12348</td>
+                                                <td class="t1">ECKH6UEO0</td>
+                                                <td class="t1">Sapna Harsh</td>
+                                                <td class="t1">Anuj Tiwari</td>
+                                                <td class="t1">May 21, 2021</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="t1">12348</td>
+                                                <td class="t1">ECKH6UEO0</td>
+                                                <td class="t1">Sapna Harsh</td>
+                                                <td class="t1">Anuj Tiwari</td>
+                                                <td class="t1">May 21, 2021</td>
+                                            </tr>
+                                            <tr >
+                                                <td class="t1">12349</td>
+                                                <td class="t1">ECFR9JE10</td>
+                                                <td class="t1">Sapna Harsh</td>
+                                                <td class="t1">Anuj Tiwari</td>
+                                                <td class="t1">May 21, 2021</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="t1">12348</td>
+                                                <td class="t1">ECKH6UEO0</td>
+                                                <td class="t1">Sapna Harsh</td>
+                                                <td class="t1">Anuj Tiwari</td>
+                                                <td class="t1">May 21, 2021</td>
+                                            </tr>
+                                            <tr >
+                                                <td class="t1">12350</td>
+                                                <td class="t1">EFR6THE10</td>
+                                                <td class="t1">Sapna Harsh</td>
+                                                <td class="t1">Anuj Tiwari</td>
+                                                <td class="t1">May 21, 2021</td>
+                                            </tr>
+                                            <tr>
+                                               <td class="t1">12347</td>
+                                                <td class="t1">ETRH2HE10</td>
+                                                <td class="t1">Sapna Harsh</td>
+                                                <td class="t1">Anuj Tiwari</td>
+                                                <td class="t1">May 21, 2021</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="t1">12351</td>
+                                                <td class="t1">ECKH2HE10</td>
+                                                <td class="t1">Sapna Harsh</td>
+                                                <td class="t1">Anuj Tiwari</td>
+                                                <td class="t1">May 21, 2021</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="t1">12352</td>
+                                                <td class="t1">EUYH2HE10</td>
+                                                <td class="t1">Sapna Harsh</td>
+                                                <td class="t1">Anuj Tiwari</td>
+                                                <td class="t1">May 21, 2021</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="t1">12353</td>
+                                                <td class="t1">EVSH2HE10</td>
+                                                <td class="t1">Sapna Harsh</td>
+                                                <td class="t1">Anuj Tiwari</td>
+                                                <td class="t1">May 21, 2021</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="t1">12354</td>
+                                                <td class="t1">ECKH2HE10</td>
+                                                <td class="t1">Sapna Harsh</td>
+                                                <td class="t1">Anuj Tiwari</td>
+                                                <td class="t1">May 21, 2021</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+
+                                    <div class="row small_font">
+                                        <div class="col-sm-10">
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <a href="#"> Continue..</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 margin_top table_pad">
+                                    <h3 class="tab_page_heading">Recent Notification </h3>
+
+                                    <table class="table table_font">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">User</th>
+                                                <th scope="col">Messsage</th>
+                                                <th scope="col">Duration</th>
+                                                <th scope="col">Close</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td> <img src="./img/pics/attractive-man-model.jpg"
+                                                        class="table_profile_pic"></td>
+                                                <td>Learn every thing there is to know</td>
+                                                <td>5 hours ago</td>
+                                                <td> <i class="fa fa-times-circle fa_times" aria-hidden="true"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td> <img src="./img/pics/michael-dam-mEZ3PoFGs_k-unsplash.jpg"
+                                                        class="table_profile_pic"></td>
+                                                <td>Learn every thing there is to know</td>
+                                                <td>5 hours ago</td>
+                                                <td> <i class="fa fa-times-circle fa_times" aria-hidden="true"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td> <img src="./img/pics/nathan-fertig-5EIW3DDX6dw-unsplash.jpg"
+                                                        class="table_profile_pic"></td>
+                                                <td>Learn every thing there is to know</td>
+                                                <td>5 hours ago</td>
+                                                <td> <i class="fa fa-times-circle fa_times" aria-hidden="true"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td> <img src="./img/pics/attractive-man-model.jpg"
+                                                        class="table_profile_pic"></td>
+                                                <td>Learn every thing there is to know</td>
+                                                <td>5 hours ago</td>
+                                                <td> <i class="fa fa-times-circle fa_times" aria-hidden="true"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td> <img src="./img/pics/michael-dam-mEZ3PoFGs_k-unsplash.jpg"
+                                                        class="table_profile_pic"></td>
+                                                <td>Learn every thing there is to know</td>
+                                                <td>5 hours ago</td>
+                                                <td> <i class="fa fa-times-circle fa_times" aria-hidden="true"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td> <img src="./img/pics/nathan-fertig-5EIW3DDX6dw-unsplash.jpg"
+                                                        class="table_profile_pic"></td>
+                                                <td>Learn every thing there is to know</td>
+                                                <td>5 hours ago</td>
+                                                <td> <i class="fa fa-times-circle fa_times" aria-hidden="true"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td> <img src="./img/pics/nathan-fertig-5EIW3DDX6dw-unsplash.jpg"
+                                                        class="table_profile_pic"></td>
+                                                <td>Learn every thing there is to know</td>
+                                                <td>5 hours ago</td>
+                                                <td> <i class="fa fa-times-circle fa_times" aria-hidden="true"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td> <img src="./img/pics/attractive-man-model.jpg"
+                                                        class="table_profile_pic"></td>
+                                                <td>Learn every thing there is to know</td>
+                                                <td>5 hours ago</td>
+                                                <td> <i class="fa fa-times-circle fa_times" aria-hidden="true"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td> <img src="./img/pics/michael-dam-mEZ3PoFGs_k-unsplash.jpg"
+                                                        class="table_profile_pic"></td>
+                                                <td>Learn every thing there is to know</td>
+                                                <td>5 hours ago</td>
+                                                <td> <i class="fa fa-times-circle fa_times" aria-hidden="true"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td> <img src="./img/pics/attractive-man-model.jpg"
+                                                        class="table_profile_pic"></td>
+                                                <td>Learn every thing there is to know</td>
+                                                <td>5 hours ago</td>
+                                                <td> <i class="fa fa-times-circle fa_times" aria-hidden="true"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td> <img src="./img/pics/michael-dam-mEZ3PoFGs_k-unsplash.jpg"
+                                                        class="table_profile_pic"></td>
+                                                <td>Learn every thing there is to know</td>
+                                                <td>5 hours ago</td>
+                                                <td> <i class="fa fa-times-circle fa_times" aria-hidden="true"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td> <img src="./img/pics/nathan-fertig-5EIW3DDX6dw-unsplash.jpg"
+                                                        class="table_profile_pic"></td>
+                                                <td>Learn every thing there is to know</td>
+                                                <td>5 hours ago</td>
+                                                <td> <i class="fa fa-times-circle fa_times" aria-hidden="true"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <td> <img src="./img/pics/attractive-man-model.jpg"
+                                                        class="table_profile_pic"></td>
+                                                <td>Learn every thing there is to know</td>
+                                                <td>5 hours ago</td>
+                                                <td> <i class="fa fa-times-circle fa_times" aria-hidden="true"></i></td>
+                                            </tr>
+
+
+                                        </tbody>
+                                    </table>
+                                    <div class="row small_font">
+                                        <div class="col-sm-10">
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <a href="#"> Continue..</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <img src="./img/assets/Copyright.svg" class="footer_copy">
+                                    <p class="footer"> 2021 All Copyrights reserved</p>
+                                </div>
+                                <div class="col-sm-4"></div>
+                                <div class="col-sm-2 footer_right">
+                                    <a href="https://neologicx.com/" class="footer footer_right"> Neologicx </a>
+                                    <p class="footer footer_right">Powered by </p>
+
+                                </div>
+                            </div>
+
+
+                        </section>
+                    </article>
+                    <article class="tab-pane container" id="invitation-left">
+                        <h1>Ipsum</h1>
+                        <section>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et
+                            dolore magna aliqua. A lacus vestibulum sed arcu. Mi tempus imperdiet nulla malesuada
+                            pellentesque.
+                            Natoque penatibus et magnis dis parturient. Rhoncus aenean vel elit scelerisque mauris
+                            pellentesque.
+                            In hendrerit gravida rutrum quisque non tellus orci ac. Lectus magna fringilla urna
+                            porttitor rhoncus
+                            dolor. At tempor commodo ullamcorper a lacus vestibulum sed arcu. Senectus et netus et
+                            malesuada fames
+                            ac. Diam quis enim lobortis scelerisque fermentum. Praesent tristique magna sit amet
+                            purus gravida
+                            quis. Elit eget gravida cum sociis natoque penatibus et magnis. Nibh praesent tristique
+                            magna sit amet
+                            purus gravida. Cursus vitae congue mauris rhoncus. Id leo in vitae turpis massa. Blandit
+                            libero
+                            volutpat sed cras. Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus
+                            urna.
+                        </section>
+                    </article>
+                    <article class="tab-pane container" id="user-left">
+                        <h1>Llanfair­pwllgwyngyll­gogery­chwyrn­drobwll­llan­tysilio­gogo­goch</h1>
+                        <section>
+                            <p><small>From Wikipedia, the free encyclopedia</small></p>
+                        </section>
+                        <section>
+                            <p>
+                                Llanfair­pwllgwyngyll­gogery­chwyrn­drobwll­llan­tysilio­gogo­goch (pronounced
+                                [ˌɬanvair­pʊɬˌɡwɨ̞ŋɡɨ̞ɬ­ɡɔˌɡɛrə­ˌχwərn­ˌdrɔbʊɬ­ˌɬan­təˌsɪljɔ­ˌɡɔɡɔ­ˈɡoːχ] in Welsh),
+                                official short
+                                form name Llanfairpwllgwyngyll (pronounced [ɬanˌvair puɬˈɡwɨ̞nɡɨ̞ɬ]), also spelled
+                                Llanfair
+                                Pwllgwyngyll, is a large village and local government community on the island of
+                                Anglesey in Wales.
+                                It is situated on the Menai Strait next to the Britannia Bridge and across the
+                                strait from Bangor.
+                                While the official short form name is used in official contexts, both the full name
+                                and shortened
+                                (Llanfairpwll or Llanfair PG) forms of the place name are used in various contexts.
+                            </p>
+                            <p>
+                                <a href="https://en.wikipedia.org/wiki/Llanfairpwllgwyngyll" target="_blank"
+                                    title="Open Wikipedia article in a new tab.">Full article &gt;</a>
+                            </p>
+                        </section>
+                    </article>
+
+                    <article class="tab-pane container" id="events-left">
+                        <h1>Ipsum</h1>
+                        <section>
+                            ermentum. Praesent tristique magna sit amet
+                            purus gravida
+                            quis. Elit eget gravida cum sociis natoque penatibus et magnis. Nibh praesent tristique
+                            magna sit amet
+                            purus gravida. Cursus vitae congue mauris rhoncus. Id leo in vitae turpis massa. Blandit
+                            libero
+                            volutpat sed cras. Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus
+                            urna.
+                        </section>
+                    </article>
+
+                    <article class="tab-pane container" id="profile-left">
+                        <h1>Ipsum</h1>
+                        <section>
+                            sociis natoque penatibus et magnis. Nibh praesent tristique
+                            magna sit amet
+                            purus gravida. Cursus vitae congue mauris rhoncus. Id leo in vitae turpis massa. Blandit
+                            libero
+                            volutpat sed cras. Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus
+                            urna.
+                        </section>
+                    </article>
+
+                    <article class="tab-pane container" id="signout-left">
+                        <h1>Ipsum</h1>
+                        <section>
+                            adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus
+                            urna.
+                        </section>
+                    </article>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+            integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+            crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+            integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
